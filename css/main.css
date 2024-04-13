@@ -1,0 +1,443 @@
+
+/* GLOBAL STYLES */
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+  .oswald-font {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  :root {
+    --bs-primary: #4A6247;
+    --bs-primary-rgb: rgb(74, 98, 71);
+    --bs-secondary: #B5C1B3;
+    --bs-secondary-rgb: rgb(181, 193, 179);
+    --bs-dark:rgb(7, 7, 7);
+    --bs-dark-secondary: #4F4F4F;
+    --bs-dark-secondary-rgb: #4F4F4F;
+    --bs-light:#fff;
+    --bs-font: "Bebas Neue", sans-serif;
+}
+
+
+.body {
+    font-family: "Bebas Neue", sans-serif; 
+}
+
+
+
+
+
+/************ HOME STYLES ***************/
+
+/* NAVIGATION */
+header {
+    background-color: #fffbf7; /* Background color for navigation */
+    padding: 10px 20px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px; 
+    height: auto; /* Maintain aspect ratio */
+}
+
+.title {
+    color: var(--bs-dark); /* Font color for the title */
+    font-size: 35px; 
+    align-items: center;
+    margin-left: 110px;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-family: "Bebas Neue", sans-serif;
+   
+}
+
+.nav-item {
+    margin-left: 20px;
+    
+}
+
+.nav-link {
+    color: var(--bs-dark); /* Font color for navigation links */
+    text-decoration: none;
+    font-size: 18px; 
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    color: var(--bs-primary);
+}
+
+.nav-link.active {
+    font-weight: bold;
+}
+
+/* BANNER */
+
+.banner-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-color: #fffbf7; /* Background color */
+    color: var(--bs-dark); /* Text color */
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.banner-content {
+    padding: 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.banner-content h2 {
+    font-size: 85px;
+    margin-bottom: 20px;
+    
+}
+
+.banner-content h3 {
+    font-size: 40px;
+    margin-bottom: 30px;
+   
+}
+
+.banner-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%; /* Adjust image width */
+    z-index: 0;
+}
+
+
+.banner-text {
+    text-align: center;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* To vertically center the container */
+    min-height: 100vh; /* Ensure the container takes up the full height of the viewport */
+}
+
+.banner-container {
+    text-align: center;
+}
+/* PROJECTS  */
+
+.title-projects {
+    text-align: center;
+    color: var(--bs-dark);
+    font-family: var(--bs-font);
+    font-size: 55px;
+    padding-top:100px;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
+    margin: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.project img {
+    display: block;
+    margin: 0 auto;
+    width: 200px; /* Adjust image width as needed */
+    transition: transform 0.3s ease;
+}
+
+.project img:hover {
+    transform: scale(1.1); /* Adjust the scale factor for the zoom effect */
+}
+
+.project h4 {
+    margin-top: 10px;
+    color: var(--bs-dark);
+    font-family: var(--bs-font);
+}
+
+/* btn */
+
+
+
+.medium-button {
+    background-color: var(--bs-dark); /* Button background color */
+    color: #ffffff; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: var(--bs-font);
+    text-decoration: none;
+}
+
+.medium-button:hover {
+    background-color: var(--bs-secondary); /* Button background color on hover */
+    text-decoration: none;
+    color: var(--bs-light);
+}
+
+
+
+
+
+/* TESTIMONIALS */
+
+.testimonial-title {
+    color: var(--bs-dark);
+    font-size: 55px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    margin: 30px 0 70px;
+    font-family: var(--bs-font);
+    padding-top: 50px;
+   
+}
+ 
+
+
+
+/* FOOTER */
+footer {
+    background-color: #fffbf7; /* Background color for the footer */
+    color: var(--bs-dark); /* Text color for the footer */
+    padding: 20px 0; 
+    text-align: center; /* Align text to the center */ 
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px; 
+    margin: 0 auto; /* Center the footer container */
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.left-section,
+.right-section {
+    flex: 1; /* Equal width for both sections */
+}
+
+
+.footer-social-media-icon {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-social-media-icon a {
+    margin: 0 10px; 
+}
+
+.footer-social-media-icon img {
+    width: 30px; 
+    height: 30px; 
+}
+
+
+
+
+
+/************** DESIGN PAGE *************/
+
+.text-center {
+    text-align: center;
+    font-family: var(--bs-font);
+    padding-top: 50px;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Adjust the gap between images */
+}
+
+.image-container {
+    position: relative;
+    width: 50rem; /* Adjust the width of each image */
+    height: auto;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the overlay color and opacity */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-overlay p {
+    color: white;
+    text-align: center;
+    font-size: 20px; 
+}
+
+.image-container:hover .image-overlay {
+    opacity: 1;
+}
+
+
+/*************** ABOUT ME PAGE ******************/
+
+.p-desc {
+  font-family: "Oswald", sans-serif;
+  font-size: 25px;
+}
+
+.banner-container {
+    display: flex;
+    align-items: center;
+}
+
+.banner-content {
+    width: 60%;
+    text-align: center;
+}
+
+.banner-img {
+    width: 40%;
+    text-align: right; /* Align the image to the right */
+}
+
+.banner-content p {
+    margin: 0;
+    
+}
+
+.banner-img img {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px; /* Set a maximum height for the image */
+    margin-right: 200px;
+}
+
+
+@media (max-width: 768px) {
+    .banner-container {
+        flex-direction: column;
+    }
+
+    .banner-img {
+        width: 100%;
+        text-align: center; /* Center-align the image on smaller screens */
+        margin-top: 20px; /* Add some spacing between the text and image */
+        margin-right: px;
+    }
+}
+
+
+/* contact form */
+.container {
+    display: flex;
+}
+
+.left-align,
+.right-align {
+    text-align: center;
+    width: 50%;
+    padding: 80px;
+}
+
+.right-align {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+   
+}
+
+.contact-form {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    
+}
+
+.left-align {
+    padding-top: 100px;
+    align-items: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--bs-dark);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--bs-dark-secondary-rgb);
+}

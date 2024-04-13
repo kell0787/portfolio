@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Icon CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- GOOGLE FONT  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- TESTIMONIALS CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION  -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/Sophialogo.png" alt="Sophia's Visuals logo">
+            </div>
+            <div class="title">SOPHIA'S VISUALS</div>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="design.html">Design</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+
+
+    <!-- hero area -->
+<main>
+    <div class="banner-container">
+        <div class="banner-content">
+            <h2 class="banner-text">Welcome to my portfolio!, I'm Sophia!</h2>
+            <h3 class="banner-text">I specialize in crafting visually appealing designs and creating seamless user
+                experiences.</h3>
+        </div>
+
+    </div>
+
+
+
+
+    <!-- RECENT PROJECTS -->
+
+
+    <h1 class="title-projects">My Recent Projects!</h1>
+
+    <div class="project-container">
+        <div class="project">
+            <img src="images/graphic1.png" alt="graphic design">
+            <h4>Pink Floyd Photoshop</h4>
+        </div>
+        <div class="project">
+            <img src="images/graphic2.png" alt="graphic design">
+            <h4>Nujabes Adobe Illustrator vector</h4>
+        </div>
+        <div class="project">
+            <img src="images/graphic3.png" alt="graphic design">
+            <h4>Guitar Adobe Illustrator vector</h4>
+        </div>
+        <div class="project">
+            <img src="images/graphic4.png" alt="graphic design">
+            <h4>Guitarist concert Adobe Illustrator vector</h4>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <a href="design.html" class="medium-button">View My Work</a>
+    </div>
+
+
+
+
+    <!-- TESTIMONIALS -->
+    <h2 class="testimonial-title">Testimonials</h2>
+
+    <style>
+        h2::after {
+            content: "";
+            width: 100px;
+            position: absolute;
+            margin: 0 auto;
+            height: 4px;
+            border-radius: 1px;
+
+            left: 0;
+            right: 0;
+            bottom: -20px;
+        }
+
+        .carousel {
+            margin: 50px auto;
+            padding: 0 70px;
+        }
+
+        .carousel .item {
+            color: #999;
+            overflow: hidden;
+            min-height: 120px;
+            font-size: 13px;
+        }
+
+        .carousel .media img {
+            width: 80px;
+            height: 80px;
+            display: block;
+            border-radius: 50%;
+        }
+
+        .carousel .testimonial {
+            padding: 0 15px 0 60px;
+            position: relative;
+        }
+
+        .carousel .testimonial::before {
+            content: "\201C";
+            font-family: Arial, sans-serif;
+            color: #e2e2e2;
+            font-weight: bold;
+            font-size: 68px;
+            line-height: 54px;
+            position: absolute;
+            left: 15px;
+            top: 0;
+        }
+
+        .carousel .overview b {
+            text-transform: uppercase;
+            color: #4A6247;
+        }
+
+        .carousel .carousel-indicators {
+            bottom: -40px;
+        }
+
+        .carousel-indicators li,
+        .carousel-indicators li.active {
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            margin: 1px 3px;
+        }
+
+        .carousel-indicators li {
+            background: #e2e2e2;
+            border: 4px solid #fff;
+        }
+
+        .carousel-indicators li.active {
+            color: #fff;
+            background: #4A6247;
+            border: 5px double;
+        }
+    </style>
+
+
+
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Carousel indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>
+                        <!-- Wrapper for carousel items -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="media">
+                                            <div class="media-left d-flex mr-3">
+                                                <a href="#">
+                                                    <img src="images/profile-picture.png" alt="grey profile picture">
+                                                </a>
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="testimonial">
+                                                    <p>Working with Sophia was an absolute pleasure! Their
+                                                        attention to detail and creative flair brought our vision to
+                                                        life. The graphics they designed for our marketing campaign
+                                                        truly elevated our brand presence.</p>
+                                                    <p class="overview"><b>Paula Wilson</b>, Media Analyst</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="media">
+                                            <div class="media-left d-flex mr-3">
+                                                <a href="#">
+                                                    <img src="images/profile-picture.png" alt="grey profile picture">
+                                                </a>
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="testimonial">
+                                                    <p>I couldn't be happier with the logo Sophia designed for my
+                                                        startup. It perfectly captures the essence of our brand and has
+                                                        received rave reviews from our clients. Highly recommended!</p>
+                                                    <p class="overview"><b>Antonio Moreno</b>, Web Developer</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="media">
+                                            <div class="media-left d-flex mr-3">
+                                                <a href="#">
+                                                    <img src="images/profile-picture.png" alt="grey profile picture">
+                                                </a>
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="testimonial">
+                                                    <p>The user experience improvements suggested by Sophia
+                                                        significantly enhanced our website's performance. Her expertise
+                                                        in UX design transformed complex workflows into intuitive,
+                                                        seamless interactions. Our users are delighted with the new
+                                                        interface!.</p>
+                                                    <p class="overview"><b>Michael Holz</b>, Manager at Tech Innovations
+                                                        Inc.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="media">
+                                            <div class="media-left d-flex mr-3">
+                                                <a href="#">
+                                                    <img src="images/profile-picture.png" alt="grey profile picture">
+                                                </a>
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="testimonial">
+                                                    Collaborating with Sophia on our app redesign project was a
+                                                    game-changer. Her meticulous approach to user research and
+                                                    prototyping resulted in a user-centric design that exceeded our
+                                                    expectations. Thanks to her insights, our app now stands out in a
+                                                    crowded market.</p>
+                                                    <p class="overview"><b>Mary Saveley</b>, CEO of Mobile Solutions
+                                                        Ltd.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="media">
+                                            <div class="media-left d-flex mr-3">
+                                                <a href="#">
+                                                    <img src="images/profile-picture.png" alt="grey profile picture">
+                                                </a>
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="testimonial">
+                                                    <p>I hired Sophia for a professional photo shoot, and I was blown
+                                                        away by the quality of her work. She has a keen eye for
+                                                        capturing the perfect shot, and her attention to lighting and
+                                                        composition is unmatched. The photos she delivered surpassed all
+                                                        my expectations!</p>
+                                                    <p class="overview"><b>Martin Sommer</b>, Freelance Model</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="media">
+                                            <div class="media-left d-flex mr-3">
+                                                <a href="#">
+                                                    <img src="images/profile-picture.png" alt="grey profile picture">
+                                                </a>
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="testimonial">
+                                                    <p>As a real estate agent, high-quality photos are crucial for
+                                                        showcasing properties online. Sophia understood our requirements
+                                                        perfectly and delivered stunning photographs that truly
+                                                        highlighted the best features of each property. Her photography
+                                                        skills are top-notch!</p>
+                                                    <p class="overview"><b>John Williams</b>, Real Estate Agent at Dream
+                                                        Homes Realty</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+        <!-- FOOTER -->
+        <footer role="contentinfo">
+            <div class="container footer-container">
+                <div class="left-section">
+                    <h3>Lets get Connected!</h3>
+                    <div class="footer-copyright">
+                        <p>&copy; Sophia's Visuals</p>
+                    </div>
+                </div>
+
+                <div class="right-section">
+                    <h3> Follow me on socials!</h3>
+                    <div class="footer-social-media-icon">
+                        <a href="https://www.linkedin.com/in/sophia-rodriguez-kellett-742884296/" target="_blank"
+                            aria-label="Twitter">
+                            <img src="images/linkedin.svg" alt="LinkedIn Icon">
+                        </a>
+                        <a href="https://github.com/kell0787/kell0787.github.io" target="_blank"
+                            aria-label="Github sign">
+                            <img src="images/square-github.svg" alt="Github Icon">
+                        </a>
+                        <a href="https://www.instagram.com/visuals.sophia/" target="_blank" aria-label="Instagram">
+                            <img src="images/instagram.svg" alt="Instagram icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    </body>
+
+</html>
