@@ -31,8 +31,51 @@
     font-family: "Bebas Neue", sans-serif; 
 }
 
+h1 {
+    font-size: 4.5rem;
+}
 
+h2 {
+    font-size: 3.375rem;
+    line-height: normal;
+}
 
+h3 {
+    font-size: 2.25rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1rem;
+    line-height: normal;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* ^ this makes it center */
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    z-index: 999;
+}
+
+.skip-link:focus {
+    top: 0;
+}
 
 
 /************ HOME STYLES ***************/
@@ -57,8 +100,8 @@ header {
 .title {
     color: var(--bs-dark); /* Font color for the title */
     font-size: 35px; 
-    align-items: center;
-    margin-left: 110px;
+    text-align: center;
+    margin-left: 150px;
     font-family: "Bebas Neue", sans-serif;
 }
 
@@ -175,7 +218,7 @@ header {
 .project img {
     display: block;
     margin: 0 auto;
-    width: 200px; /* Adjust image width as needed */
+    width: 200px; 
     transition: transform 0.3s ease;
 }
 
@@ -386,6 +429,7 @@ footer {
     text-align: center;
     width: 50%;
     padding: 80px;
+    font-family: var(--bs-font);
 }
 
 .right-align {
@@ -441,3 +485,196 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: var(--bs-dark-secondary-rgb);
 }
+
+
+
+header, main, footer {
+    outline: var(--bs-light);
+}
+
+
+/************** MOBILE STYLES ****************/
+
+/* HOME PAGE */
+@media (max-width: 768px) {
+    /* Adjustments for header */
+    .nav {
+        flex-direction: column;
+    }
+
+    .nav-item {
+        margin-bottom: 10px;
+    }
+
+    /* Adjustments for hero area */
+    .banner-content {
+        text-align: center;
+    }
+
+    /* Adjustments for recent projects */
+    .project-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .project {
+        margin: 10px;
+    }
+
+    /* Adjustments for testimonials */
+    .testimonial {
+        padding: 0;
+    }
+
+    .carousel .media img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .carousel .testimonial::before {
+        left: 0;
+        top: -20px;
+    }
+
+    .carousel-indicators {
+        bottom: -20px;
+    }
+}
+
+
+/* DESIGN PAGE */
+
+   
+    /* Adjustments for banner */
+    .banner-text {
+        font-size: 24px;
+    }
+
+    /* Adjustments for image gallery */
+    .image-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .image-container {
+        width: 45%;
+        margin: 10px;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .image-overlay {
+        font-size: 14px;
+    }
+
+    /* Adjustments for footer */
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+
+/* ABOUT PAGE */
+/* Custom CSS for mobile devices */
+@media (max-width: 768px) {
+   
+  
+
+    /* Adjustments for banner */
+    .banner-container {
+        flex-direction: column-reverse;
+    }
+
+    .banner-content {
+        text-align: center;
+    }
+
+    .banner-img {
+        text-align: center;
+    }
+
+    .banner-img img {
+        max-width: 100%;
+        height: auto;
+        margin-left: 20px ;
+    }
+
+    /* Adjustments for main content sections */
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-align,
+    .right-align {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact-form-container {
+        margin-bottom: 20px;
+    }
+
+    /* Adjustments for footer */
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+
+    /* Adjustments for contact form */
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 8px;
+        box-sizing: border-box;
+    }
+
+    .contact-form button {
+        width: 100%;
+        padding: 10px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .contact-form button:hover {
+        background-color: #555;
+    }
+
+    /* Compact text */
+    h2,
+    h3,
+    h4,
+    p {
+        font-size: 10px; 
+        line-height: 1.4; 
+    }
+
+    .title {
+        color: var(--bs-dark); /* Font color for the title */
+        font-size: 35px; 
+     
+      margin-right: 100px;
+        font-family: "Bebas Neue", sans-serif;
+    }
+}
+
+

@@ -25,10 +25,43 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- animation -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 10px;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            z-index: 999;
+            text-decoration: none;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        .skip-link:hover {
+            background-color: #555;
+        }
+
+        header,
+        main,
+        footer {
+            outline: 1px solid red;
+        }
+    </style>
 </head>
-<!-- NAVIGATION -->
 
 <body>
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- NAVIGATION -->
     <header>
         <div class="header-container">
             <div class="logo">
@@ -49,158 +82,150 @@
         </div>
     </header>
 
-
-<main>
-    <!-- BANNER -->
-    <div class="banner-container">
-        <div class="banner-content">
-            <h2 class="banner-text">Take a peak at some of my work</h2>
-        </div>
-    </div>
-
-    <!-- IMAGES -->
-
-
-
-
-    <h2 class="text-center">Photography</h2>
-    <div class="image-gallery" data-aos="fade-up">
-    </div>
-
-
-    <div class="image-gallery">
-        <div class="image-container" data-aos="fade-up">
-            <img src="images/photo1.jpg" alt="Taking a look at books">
-            <div class="image-overlay">
-                <p>Assignment - Storytelling</p>
+    <main id="main-content">
+        <!-- BANNER -->
+        <div class="banner-container">
+            <div class="banner-content">
+                <h2 class="banner-text">Take a peak at some of my work</h2>
             </div>
         </div>
 
-        <div class="image-container" data-aos="fade-up">
-            <img src="images/photo2.jpg" alt="playing the piano">
-            <div class="image-overlay">
-                <p>Assignment - Photo a day</p>
-            </div>
-        </div>
-
-        <div class="image-container" data-aos="fade-up">
-            <img src="images/photo3.jpg" alt="playing chess">
-            <div class="image-overlay">
-                <p>Assignment - Photo a day</p>
-            </div>
-        </div>
-
-        <div class="image-container" data-aos="fade-up">
-            <img src="images/photo4.jpg" alt="record player">
-            <div class="image-overlay">
-                <p>Assignment - Photo a day</p>
-            </div>
-        </div>
-
-        <div class="image-container">
-            <div data-aos="fade-up">
-                <img src="images/photo5.jpg" alt="girl looking through window">
-                <div class="image-overlay">
-                    <p>Assignment - Final for photography</p>
+        <!-- IMAGES -->
+        <h2 class="text-center">Photography</h2>
+        <div class="image-gallery" data-aos="fade-up">
+            <div class="image-gallery">
+                <div class="image-container" data-aos="fade-up">
+                    <img src="images/photo1.jpg" alt="Taking a look at books">
+                    <div class="image-overlay">
+                        <p>Assignment - Storytelling</p>
+                    </div>
+                </div>
+        
+                <div class="image-container" data-aos="fade-up">
+                    <img src="images/photo2.jpg" alt="playing the piano">
+                    <div class="image-overlay">
+                        <p>Assignment - Photo a day</p>
+                    </div>
+                </div>
+        
+                <div class="image-container" data-aos="fade-up">
+                    <img src="images/photo3.jpg" alt="playing chess">
+                    <div class="image-overlay">
+                        <p>Assignment - Photo a day</p>
+                    </div>
+                </div>
+        
+                <div class="image-container" data-aos="fade-up">
+                    <img src="images/photo4.jpg" alt="record player">
+                    <div class="image-overlay">
+                        <p>Assignment - Photo a day</p>
+                    </div>
+                </div>
+        
+                <div class="image-container">
+                    <div data-aos="fade-up">
+                        <img src="images/photo5.jpg" alt="girl looking through window">
+                        <div class="image-overlay">
+                            <p>Assignment - Final for photography</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="image-container" data-aos="fade-up">
+                    <img src="images/photo6.jpg" alt="the beatles still life">
+                    <div class="image-overlay">
+                        <p>Assignment - Still life</p>
+                    </div>
+                </div>
+        
+                <div class="image-container" data-aos="fade-up">
+                    <img src="images/photo7.jpg" alt="guy walking around the market">
+                    <div class="image-overlay">
+                        <p>Assignment - Storytelling assignment 2</p>
+                    </div>
+                </div>
+        
+                <div class="image-container" data-aos="fade-up">
+                    <img src="images/photo8.jpg" alt="guy taking photo">
+                    <div class="image-overlay">
+                        <p>Assignment - Storytelling assignment 2</p>
+                    </div>
                 </div>
             </div>
+        
         </div>
 
-        <div class="image-container" data-aos="fade-up">
-            <img src="images/photo6.jpg" alt="the beatles still life">
-            <div class="image-overlay">
-                <p>Assignment - Still life</p>
-            </div>
+        <h2 class="text-center">Graphic design</h2>
+        <div class="image-gallery" data-aos="fade-up">
+            <div class="image-gallery">
+                <div class="image-container" data-aos="fade-up">
+                    <img src="images/graphic1.png" alt="pink floyd">
+                    <div class="image-overlay">
+                        <p>Assignment - Photoshop</p>
+                    </div>
+                </div>
+        
+                <div class="image-container" data-aos="fade-up">
+                    <img src="images/graphic2.png" alt="nujabes artist vector">
+                    <div class="image-overlay">
+                        <p>Nujabes vector image art</p>
+                    </div>
+                </div>
+        
+                <div class="image-container" data-aos="fade-up">
+                    <img src="images/graphic3.png" alt="guitar vector">
+                    <div class="image-overlay">
+                        <p>Assignment - Vector image final</p>
+                    </div>
+                </div>
+        
+                <div class="image-container" data-aos="fade-up">
+                    <img src="images/graphic4.png" alt="vector of guy on stage">
+                    <div class="image-overlay">
+                        <p>Assignment - Vector image final</p>
+                    </div>
+                </div>
+        
+        
         </div>
-
-        <div class="image-container" data-aos="fade-up">
-            <img src="images/photo7.jpg" alt="guy walking around the market">
-            <div class="image-overlay">
-                <p>Assignment - Storytelling assignment 2</p>
-            </div>
-        </div>
-
-        <div class="image-container" data-aos="fade-up">
-            <img src="images/photo8.jpg" alt="guy taking photo">
-            <div class="image-overlay">
-                <p>Assignment - Storytelling assignment 2</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- graphic design portion -->
-    <h2 class="text-center">Graphic design</h2>
-    <div class="image-gallery" data-aos="fade-up">
-    </div>
-
-
-    <div class="image-gallery">
-        <div class="image-container" data-aos="fade-up">
-            <img src="images/graphic1.png" alt="pink floyd">
-            <div class="image-overlay">
-                <p>Assignment - Photoshop</p>
-            </div>
-        </div>
-
-        <div class="image-container" data-aos="fade-up">
-            <img src="images/graphic2.png" alt="nujabes artist vector">
-            <div class="image-overlay">
-                <p>Nujabes vector image art</p>
-            </div>
-        </div>
-
-        <div class="image-container" data-aos="fade-up">
-            <img src="images/graphic3.png" alt="guitar vector">
-            <div class="image-overlay">
-                <p>Assignment - Vector image final</p>
-            </div>
-        </div>
-
-        <div class="image-container" data-aos="fade-up">
-            <img src="images/graphic4.png" alt="vector of guy on stage">
-            <div class="image-overlay">
-                <p>Assignment - Vector image final</p>
-            </div>
-        </div>
-
-
     </main>
-        <!-- FOOTER -->
-        <footer role="contentinfo">
-            <div class="container footer-container">
-                <div class="left-section">
-                    <h3>Lets get Connected!</h3>
-                    <div class="footer-copyright">
-                        <p>&copy; Sophia's Visuals</p>
-                    </div>
-                </div>
 
-                <div class="right-section">
-                    <h3> Follow me on socials!</h3>
-                    <div class="footer-social-media-icon">
-                        <a href="https://www.linkedin.com/in/sophia-rodriguez-kellett-742884296/" target="_blank"
-                            aria-label="Twitter">
-                            <img src="images/linkedin.svg" alt="LinkedIn Icon">
-                        </a>
-                        <a href="https://github.com/kell0787/kell0787.github.io" target="_blank"
-                            aria-label="Github sign">
-                            <img src="images/square-github.svg" alt="Github Icon">
-                        </a>
-                        <a href="https://www.instagram.com/visuals.sophia/" target="_blank" aria-label="Instagram">
-                            <img src="images/instagram.svg" alt="Instagram icon">
-                        </a>
-                    </div>
+    <!-- FOOTER -->
+    <footer role="contentinfo">
+        <div class="container footer-container">
+            <div class="left-section">
+                <h3>Lets get Connected!</h3>
+                <div class="footer-copyright">
+                    <p>&copy; Sophia's Visuals</p>
                 </div>
             </div>
-        </footer>
 
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-            AOS.init();
-        </script>
+            <div class="right-section">
+                <h3> Follow me on socials!</h3>
+                <div class="footer-social-media-icon">
+                    <a href="https://www.linkedin.com/in/sophia-rodriguez-kellett-742884296/" target="_blank"
+                        aria-label="Twitter">
+                        <img src="images/linkedin.svg" alt="LinkedIn Icon">
+                    </a>
+                    <a href="https://github.com/kell0787/kell0787.github.io" target="_blank"
+                        aria-label="Github sign">
+                        <img src="images/square-github.svg" alt="Github Icon">
+                    </a>
+                    <a href="https://www.instagram.com/visuals.sophia/" target="_blank" aria-label="Instagram">
+                        <img src="images/instagram.svg" alt="Instagram icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
